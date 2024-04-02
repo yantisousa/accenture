@@ -12,7 +12,7 @@ class AlunosController extends Controller
 {
     public function index()
     {
-        $alunos = Alunos::orderBy('nome')->get();
+        $alunos = Alunos::orderBy('nome' )->get();
         return view('alunos.index', compact('alunos'));
     }
 
